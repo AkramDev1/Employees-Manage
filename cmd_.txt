@@ -1,0 +1,112 @@
+Microsoft Windows [Version 10.0.19044.1645]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Akram\Desktop\pythonProject>python -m venv myenv
+
+C:\Users\Akram\Desktop\pythonProject>myenv\scripts\activate
+
+(myenv) C:\Users\Akram\Desktop\pythonProject>pip install django
+Collecting django
+  Downloading Django-4.0.4-py3-none-any.whl (8.0 MB)
+     ---------------------------------------- 8.0/8.0 MB 376.3 kB/s eta 0:00:00
+Collecting tzdata
+  Downloading tzdata-2022.1-py2.py3-none-any.whl (339 kB)
+     --------------------------------------- 339.5/339.5 KB 413.1 kB/s eta 0:00:00
+Collecting sqlparse>=0.2.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+     ---------------------------------------- 42.3/42.3 KB 291.5 kB/s eta 0:00:00
+Collecting asgiref<4,>=3.4.1
+  Downloading asgiref-3.5.0-py3-none-any.whl (22 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.5.0 django-4.0.4 sqlparse-0.4.2 tzdata-2022.1
+
+(myenv) C:\Users\Akram\Desktop\pythonProject>pip install djangorestframwork
+ERROR: Could not find a version that satisfies the requirement djangorestframwork (from versions: none)
+ERROR: No matching distribution found for djangorestframwork
+
+(myenv) C:\Users\Akram\Desktop\pythonProject>pip install djangorestframework
+Collecting djangorestframework
+  Downloading djangorestframework-3.13.1-py3-none-any.whl (958 kB)
+     --------------------------------------- 958.3/958.3 KB 146.9 kB/s eta 0:00:00
+Requirement already satisfied: django>=2.2 in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from djangorestframework) (4.0.4)
+Collecting pytz
+  Downloading pytz-2022.1-py2.py3-none-any.whl (503 kB)
+     ---------------------------------------- 503.5/503.5 KB 90.5 kB/s eta 0:00:00
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from django>=2.2->djangorestframework) (0.4.2)
+Requirement already satisfied: asgiref<4,>=3.4.1 in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from django>=2.2->djangorestframework) (3.5.0)
+Requirement already satisfied: tzdata in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from django>=2.2->djangorestframework) (2022.1)
+Installing collected packages: pytz, djangorestframework
+Successfully installed djangorestframework-3.13.1 pytz-2022.1
+
+(myenv) C:\Users\Akram\Desktop\pythonProject>django-admin startproject DjangoAPI
+
+(myenv) C:\Users\Akram\Desktop\pythonProject>cd DjangoAPI
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>code .
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage-py runserver
+C:\Users\Akram\AppData\Local\Programs\Python\Python310\python.exe: can't open file 'C:\\Users\\Akram\\Desktop\\pythonProject\\DjangoAPI\\manage-py': [Errno 2] No such file or directory
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+April 29, 2022 - 19:56:09
+Django version 4.0.4, using settings 'DjangoAPI.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[29/Apr/2022 19:56:59] "GET / HTTP/1.1" 200 10697
+[29/Apr/2022 19:57:00] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[29/Apr/2022 19:57:00] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[29/Apr/2022 19:57:00] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[29/Apr/2022 19:57:00] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[29/Apr/2022 19:57:00] "GET /favicon.ico HTTP/1.1" 404 2113
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>ss
+'ss' is not recognized as an internal or external command,
+operable program or batch file.
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>pip install django-cors-headers
+Collecting django-cors-headers
+  Downloading django_cors_headers-3.11.0-py3-none-any.whl (12 kB)
+Requirement already satisfied: Django>=2.2 in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from django-cors-headers) (4.0.4)
+Requirement already satisfied: asgiref<4,>=3.4.1 in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from Django>=2.2->django-cors-headers) (3.5.0)
+Requirement already satisfied: tzdata in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from Django>=2.2->django-cors-headers) (2022.1)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\akram\desktop\pythonproject\myenv\lib\site-packages (from Django>=2.2->django-cors-headers) (0.4.2)
+Installing collected packages: django-cors-headers
+Successfully installed django-cors-headers-3.11.0
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py startapp EmployeeApp
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py makemigrations EmployeeApp
+No installed app with label 'EmployeeApp'.
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py makemigrations EmployeeApp
+No installed app with label 'EmployeeApp'.
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py migrate EmployeeApp
+CommandError: No installed app with label 'EmployeeApp'.
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py makemigrations EmployeeApp
+Migrations for 'EmployeeApp':
+  EmployeeApp\migrations\0001_initial.py
+    - Create model Departments
+    - Create model Employees
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>python manage.py migrate EmployeeApp
+Operations to perform:
+  Apply all migrations: EmployeeApp
+Running migrations:
+  Applying EmployeeApp.0001_initial... OK
+
+(myenv) C:\Users\Akram\Desktop\pythonProject\DjangoAPI>
